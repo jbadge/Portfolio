@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Tamagotchi Reloaded",
+    "website": "https://tamagotchi-reloaded-jb.netlify.app",
+    "thumbnail": "/tamagotchi.png"
+  },
+  {
+    "id": 2,
+    "name": "CrypoCoin",
+    "website": "https://cryptocoin-jb.netlify.app/",
+    "thumbnail": "/crypto.png"
+  },
+  {
+    "id": 3,
+    "name": "Snowman",
+    "website": "https://snowman-jb.netlify.app",
+    "thumbnail": "/snowman.png"
+  },
+  {
+    "id": 4,
+    "name": "Minesweeper",
+    "website": "https://minesweeper-jb.netlify.app/",
+    "thumbnail": "/minesweeper.png"
+  }
+]

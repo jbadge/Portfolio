@@ -1,15 +1,5 @@
 :root {
   font: 16px / 1 sans-serif;
-
-  // SDG brand colors
-  --asphalt: #2f3737;
-  --bright-sky: #80ced2;
-  --lime: #b1d133;
-  --night-sky: #85577e;
-  --sand: #f7f0da;
-  --sea: #5a9090;
-  --sun: #d5562b;
-  --tangerine: #f99d1b;
 }
 
 html {
@@ -20,3 +10,29 @@ body {
   margin: 0;
   min-height: 100%;
 }
+
+.portfolio-item-list {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+}
+
+.img-profile {
+  width: 250px;
+  border-radius: 50%;
+}
+
+.img-portfolio {
+  background-color: white;
+  // border: 1px solid #ddd;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+// .skills a {
+//   color: #fff;
+//   text-decoration: underline;
+// }
