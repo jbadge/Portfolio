@@ -1,10 +1,10 @@
+// @ts-nocheck
 import React from 'react'
 
 const NavBar = () => {
-  React.useEffect(() => {
-    const cbpAnimatedHeader = (function () {
-      let docElem: HTMLElement = document.documentElement,
-        header: HTMLElement | null =
+  const animatedHeader = (): void => {
+    ;(function () {
+      let header: HTMLElement | null =
           document.querySelector('.navbar-fixed-top'),
         didScroll: boolean = false,
         changeHeaderOn: number = 300
@@ -12,7 +12,7 @@ const NavBar = () => {
       function init(): void {
         window.addEventListener(
           'scroll',
-          function (event: Event): void {
+          function (_event: Event): void {
             if (!didScroll) {
               didScroll = true
               setTimeout(scrollPage, 250)
@@ -40,6 +40,10 @@ const NavBar = () => {
 
       init()
     })()
+  }
+
+  React.useEffect(() => {
+    animatedHeader()
   }, [])
 
   return (
