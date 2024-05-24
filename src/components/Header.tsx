@@ -8,7 +8,7 @@ const Header = () => {
           <div className="col-lg-12">
             <img
               className="img-responsive img-profile"
-              src="/images/look.jpg"
+              src="/images/jbadger.png"
               alt=""
             />
             <div className="intro-text">
