@@ -33,7 +33,6 @@ body {
 
 .img-portfolio {
   background-color: white;
-  // border: 1px solid #ddd;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -47,13 +46,12 @@ body {
 }
 
 @media (max-width: 600px) {
-  #portfolio
-    .portfolio-item-list
-    .portfolio-link
-    .caption
-    .caption-content
-    .fa-search-plus {
-    margin-top: -15px;
-    font-size: 50px;
+  #portfolio .portfolio-item-list {
+    flex-direction: column;
+    .img-portfolio {
+      background-color: white;
+      border: 1px solid #ddd;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
   }
 }
