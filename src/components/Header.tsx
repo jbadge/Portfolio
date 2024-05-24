@@ -12,7 +12,7 @@ const Header = () => {
               alt=""
             />
             <div className="intro-text">
-              <span className="name">Jeremy Badger1</span>
+              <span className="name">Jeremy Badger</span>
               <hr className="star-light" />
             </div>
           </div>
