@@ -8,7 +8,7 @@ const Header = () => {
           <div className="col-lg-12">
             <img
               className="img-responsive img-profile"
-              src="/look.jpg"
+              src="/images/look.jpg"
               alt=""
             />
             <div className="intro-text">

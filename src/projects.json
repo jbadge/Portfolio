@@ -3,24 +3,24 @@
     "id": 1,
     "name": "Tamagotchi Reloaded",
     "website": "https://tamagotchi-reloaded-jb.netlify.app",
-    "thumbnail": "/tamagotchi.png"
+    "thumbnail": "/images/tamagotchi.png"
   },
   {
     "id": 2,
     "name": "CrypoCoin",
     "website": "https://cryptocoin-jb.netlify.app/",
-    "thumbnail": "/crypto.png"
+    "thumbnail": "/images/crypto.png"
   },
   {
     "id": 3,
     "name": "Snowman",
     "website": "https://snowman-jb.netlify.app",
-    "thumbnail": "/snowman.png"
+    "thumbnail": "/images/snowman.png"
   },
   {
     "id": 4,
     "name": "Minesweeper",
     "website": "https://minesweeper-jb.netlify.app/",
-    "thumbnail": "/minesweeper.png"
+    "thumbnail": "/images/minesweeper.png"
   }
 ]

@@ -1,3 +1,12 @@
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('./assets/fonts/fontawesome-webfont.woff'),
+    url('./assets/fonts/fa-brands-400.woff2'),
+    url('./assets/fonts/fa-brands-400.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
   font: 16px / 1 sans-serif;
 }
@@ -32,7 +41,19 @@ body {
   white-space: nowrap;
 }
 
-// .skills a {
-//   color: #fff;
-//   text-decoration: underline;
-// }
+.skills a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  #portfolio
+    .portfolio-item-list
+    .portfolio-link
+    .caption
+    .caption-content
+    .fa-search-plus {
+    margin-top: -15px;
+    font-size: 50px;
+  }
+}
