@@ -1,8 +1,12 @@
 import React from 'react'
 
-const About = () => {
+interface AboutProps {
+  refProps?: React.RefObject<HTMLElement>
+}
+
+const About = ({ refProps }: AboutProps) => {
   return (
-    <section className="success" id="about">
+    <section className="success" id="about" ref={refProps}>
       <div className="container">
         <div className="row">
           <div className="col-lg-12 text-center">

@@ -2,9 +2,13 @@ import React from 'react'
 import PortfolioItem from './PortfolioItem'
 import portfolio from '../projects.json'
 
-const PortfolioList = () => {
+interface PortfolioListProps {
+  refProps?: React.RefObject<HTMLElement>
+}
+
+const PortfolioList: React.FC<PortfolioListProps> = ({ refProps }) => {
   return (
-    <section id="portfolio">
+    <section id="portfolio" ref={refProps}>
       <div className="container">
         <div className="row">
           <div className="col-lg-12 text-center">

@@ -1,8 +1,12 @@
 import React from 'react'
 
-const Header = () => {
+interface HeaderProps {
+  refProps?: React.RefObject<HTMLElement>
+}
+
+const Header = ({ refProps }: HeaderProps) => {
   return (
-    <header>
+    <header id="header" ref={refProps}>
       <div className="container">
         <div className="row">
           <div className="col-lg-12">

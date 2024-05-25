@@ -1,7 +1,14 @@
 // @ts-nocheck
 import React from 'react'
 
-const NavBar = () => {
+interface NavBarProps {
+  handleNavLinkClick: (
+    _event: React.MouseEvent<HTMLAnchorElement>,
+    _section: 'portfolio' | 'about' | 'header'
+  ) => void
+}
+
+const NavBar: React.FC<NavBarProps> = ({ handleNavLinkClick }: NavBarProps) => {
   const animatedHeader = (): void => {
     ;(function () {
       let header: HTMLElement | null =
@@ -64,7 +71,11 @@ const NavBar = () => {
             <span className="icon-bar"></span>
             <span className="icon-bar"></span>
           </button>
-          <a className="navbar-brand" href="#page-top">
+          <a
+            className="navbar-brand"
+            href="#page-top"
+            onClick={(e) => handleNavLinkClick(e, 'header')}
+          >
             Jeremy Badger
           </a>
         </div>
@@ -78,10 +89,17 @@ const NavBar = () => {
               <a href="#page-top"></a>
             </li>
             <li className="page-scroll">
-              <a href="#portfolio">Portfolio</a>
+              <a
+                href="#portfolio"
+                onClick={(e) => handleNavLinkClick(e, 'portfolio')}
+              >
+                Portfolio
+              </a>
             </li>
             <li className="page-scroll">
-              <a href="#about">About</a>
+              <a href="#about" onClick={(e) => handleNavLinkClick(e, 'about')}>
+                About
+              </a>
             </li>
           </ul>
         </div>
