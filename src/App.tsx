@@ -10,12 +10,13 @@ export function App() {
   const portfolioRef = React.useRef<HTMLDivElement>(null)
   const aboutRef = React.useRef<HTMLDivElement>(null)
 
+  // Auto-scroll to Portfolio on page load
   React.useEffect(() => {
     const scrollTimeout = setTimeout(() => {
-      if (aboutRef.current !== null) {
-        aboutRef.current.scrollIntoView({
+      if (portfolioRef.current !== null) {
+        portfolioRef.current.scrollIntoView({
           behavior: 'smooth',
-          block: 'end',
+          block: 'start',
         })
       }
     }, 500)
@@ -23,6 +24,7 @@ export function App() {
     return () => clearTimeout(scrollTimeout)
   }, [])
 
+  // Smooth scroll between sections
   const scrollToSection = (section: 'portfolio' | 'about' | 'header') => {
     let ref
     switch (section) {
@@ -39,7 +41,7 @@ export function App() {
         return
     }
     if (ref.current) {
-      ref.current.scrollIntoView({ behavior: 'smooth' })
+      ref.current.scrollIntoView({ behavior: 'smooth', block: 'start' })
     }
   }
 
