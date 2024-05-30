@@ -19,7 +19,7 @@ export function App() {
           block: 'start',
         })
       }
-    }, 500)
+    }, 100)
 
     return () => clearTimeout(scrollTimeout)
   }, [])
