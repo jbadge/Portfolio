@@ -12,6 +12,14 @@ const Footer = () => {
               <ul className="list-inline">
                 <li>
                   <a
+                    href="https://resume.jeremybadger.com"
+                    className="btn-social btn-outline"
+                  >
+                    <i className="fa fa-fw fa-file"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
                     href="https://www.linkedin.com/in/jeremybadger"
                     className="btn-social btn-outline"
                   >

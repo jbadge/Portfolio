@@ -100,6 +100,9 @@ const NavBar: React.FC<NavBarProps> = ({ handleNavLinkClick }: NavBarProps) => {
                 About
               </a>
             </li>
+            <li className="page-scroll">
+              <a href="https://resume.jeremybadger.com">Resume</a>
+            </li>
           </ul>
         </div>
       </div>
