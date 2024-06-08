@@ -102,25 +102,25 @@ body {
 }
 
 .card-overlay {
-  display: none; /* Initially hide the overlay */
+  display: none;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  background-color: rgba(0, 0, 0, 0.5);
   color: #fff;
   text-align: center;
 }
 
 .card:hover .card-overlay {
-  display: block; /* Show the overlay on hover */
+  display: block;
 }
 
 .card-overlay-title {
-  margin-top: 20%; /* Adjust to position title vertically */
+  margin-top: 20%;
 }
 
 .card-overlay-body {
-  margin-top: 20px; /* Adjust to position body content below title */
+  margin-top: 20px;
 }
