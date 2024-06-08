@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "title": "Tamagotchi Reloaded",
+    "content": "test content 1",
+    "thumbnail": "/images/tamagotchi.png",
+    "overlayTitle": "test overlayTitle 1",
+    "overlayContent": "test overlayContent 1"
+  },
+  {
+    "id": 2,
+    "title": "CrypoCoin",
+    "content": "test content 2",
+    "thumbnail": "/images/crypto.png",
+    "overlayTitle": "test overlayTitle 2",
+    "overlayContent": "test overlayContent 2"
+  },
+  {
+    "id": 3,
+    "title": "Snowman",
+    "content": "test content 3",
+    "thumbnail": "/images/snowman.png",
+    "overlayTitle": "test overlayTitle 3",
+    "overlayContent": "test overlayContent 3"
+  },
+  {
+    "id": 4,
+    "title": "Minesweeper",
+    "content": "test content 4",
+    "thumbnail": "/images/minesweeper.png",
+    "overlayTitle": "test overlayTitle 4",
+    "overlayContent": "test overlayContent 4"
+  }
+]
