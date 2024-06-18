@@ -4,7 +4,7 @@ import Header from './components/Header'
 import About from './components/About'
 import Footer from './components/Footer'
 import PortfolioList from './components/PortfolioList'
-import CardList from './components/CardList'
+// import CardList from './components/CardList'
 
 export function App() {
   const headerRef = React.useRef<HTMLElement>(null)
