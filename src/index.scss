@@ -55,3 +55,77 @@ body {
     }
   }
 }
+
+.card-item-list {
+  display: flex;
+  width: 100%;
+  gap: 40px;
+  .card {
+    all: initial;
+    display: flex;
+    // flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    background: #fff;
+    box-shadow: 0px 7px 22px rgba(0, 0, 0, 0.03);
+    overflow: hidden;
+    width: 200px;
+    height: 300px;
+    .card-body {
+      display: block;
+      text-align: center;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      height: 300px;
+      position: relative;
+      text-decoration: none;
+      width: 100%;
+      img {
+        width: 100%;
+      }
+      .card-title {
+        position: absolute;
+        width: 150px;
+        top: 55%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 12px;
+        color: black;
+      }
+      .card-text {
+        position: absolute;
+        top: 85%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 12px;
+        color: black;
+      }
+    }
+  }
+}
+
+.card-overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  text-align: center;
+}
+
+.card:hover .card-overlay {
+  display: block;
+}
+
+.card-overlay-title {
+  margin-top: 20%;
+}
+
+.card-overlay-body {
+  margin-top: 20px;
+}
