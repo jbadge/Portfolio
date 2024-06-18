@@ -61,7 +61,7 @@ export function App() {
       <main>
         <PortfolioList refProps={portfolioRef} />
         <About refProps={aboutRef} />
-        <CardList />
+        {/* <CardList /> */}
       </main>
       <Footer />
     </div>
